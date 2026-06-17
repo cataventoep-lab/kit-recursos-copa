@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-verde:        #1A6B3A;
+  --color-verde-dark:   #145530;
+  --color-verde-light:  #e8f5ee;
+  --color-amarelo:      #F5C400;
+  --color-amarelo-dark: #d4a900;
+  --color-azul:         #0047AB;
+  --color-azul-light:   #dce8ff;
+  --color-branco:       #FAFAF7;
+  --color-cinza:        #F0EFEB;
+  --color-texto:        #1C1C1C;
+  --color-texto-suave:  #4a4a4a;
+
+  --font-display: "Fredoka One", sans-serif;
+  --font-body:    "Nunito", sans-serif;
+  --font-badge:   "Barlow Condensed", sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-texto);
+  background: var(--color-branco);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* focus ring */
+:focus-visible {
+  outline: 3px solid var(--color-amarelo);
+  outline-offset: 3px;
+}
+
+/* field grid pattern reusable */
+.field-pattern {
+  background-image:
+    repeating-linear-gradient(90deg,  rgba(255,255,255,0.03) 0px, rgba(255,255,255,0.03) 60px, transparent 60px, transparent 120px),
+    repeating-linear-gradient(0deg,   rgba(255,255,255,0.03) 0px, rgba(255,255,255,0.03) 60px, transparent 60px, transparent 120px);
+}
+
+/* sticker float animation */
+@keyframes floatSticker {
+  0%, 100% { transform: translateY(0)    rotate(-3deg); }
+  50%       { transform: translateY(-8px) rotate(3deg); }
+}
+.float-1 { animation: floatSticker 3.0s ease-in-out infinite 0.0s; }
+.float-2 { animation: floatSticker 3.0s ease-in-out infinite 0.8s; }
+.float-3 { animation: floatSticker 3.0s ease-in-out infinite 1.6s; }
+
+section[id] { scroll-margin-top: 1rem; }
