@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { C, F, shadow } from "@/app/lib/tokens";
 
 const faqs = [
   {
@@ -45,14 +46,14 @@ export default function FAQ() {
         <div className="mb-10 text-center">
           <span
             className="mb-3 inline-block rounded-full bg-[#1A6B3A] px-4 py-1.5 text-white"
-            style={{ fontFamily: "var(--font-badge)", fontSize: "0.75rem", fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase" }}
+            style={{ fontFamily: F.badge, fontSize: "0.75rem", fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase" }}
           >
             Dúvidas?
           </span>
           <h2
             id="faq-title"
             className="text-[#1C1C1C]"
-            style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.6rem,4vw,2.4rem)" }}
+            style={{ fontFamily: F.display, fontSize: "clamp(1.6rem,4vw,2.4rem)" }}
           >
             Perguntas Frequentes
           </h2>
@@ -63,12 +64,12 @@ export default function FAQ() {
             <div
               key={i}
               className="overflow-hidden rounded-lg bg-white"
-              style={{ boxShadow: "0 2px 12px rgba(0,0,0,0.08)" }}
+              style={{ boxShadow: shadow.card }}
               role="listitem"
             >
               <button
                 className="flex w-full items-center justify-between gap-4 px-5 py-4 text-left font-bold text-[#1C1C1C] transition-colors hover:bg-[#F0EFEB]"
-                style={{ fontFamily: "var(--font-body)", fontSize: "0.95rem", background: open === i ? "#e8f5ee" : "#fff", color: open === i ? "#145530" : "#1C1C1C" }}
+                style={{ fontFamily: F.body, fontSize: "0.95rem", background: open === i ? C.verdeLight : "#fff", color: open === i ? C.verdeDark : C.texto }}
                 aria-expanded={open === i}
                 aria-controls={`faq-body-${i}`}
                 onClick={() => toggle(i)}
@@ -76,7 +77,7 @@ export default function FAQ() {
                 {f.q}
                 <span
                   className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#1A6B3A] text-sm font-black text-white transition-transform"
-                  style={{ transform: open === i ? "rotate(45deg)" : "none", background: open === i ? "#145530" : "#1A6B3A" }}
+                  style={{ transform: open === i ? "rotate(45deg)" : "none", background: open === i ? C.verdeDark : C.verde }}
                   aria-hidden="true"
                 >
                   +

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { C, F } from "@/app/lib/tokens";
 
 const includes = [
   "4 recursos pedagógicos imprimíveis em PDF",
@@ -23,14 +24,14 @@ export default function Pricing() {
         <div>
           <span
             className="mb-4 inline-block rounded-full bg-[#1A6B3A] px-4 py-1.5 text-white"
-            style={{ fontFamily: "var(--font-badge)", fontSize: "0.75rem", fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase" }}
+            style={{ fontFamily: F.badge, fontSize: "0.75rem", fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase" }}
           >
             O que está incluído
           </span>
           <h2
             id="preco-title"
             className="mb-5 text-[#1C1C1C]"
-            style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.6rem,4vw,2.2rem)" }}
+            style={{ fontFamily: F.display, fontSize: "clamp(1.6rem,4vw,2.2rem)" }}
           >
             Tudo que você precisa para dar uma aula incrível
           </h2>
@@ -57,7 +58,7 @@ export default function Pricing() {
 
           <p
             className="mb-3 text-white/70"
-            style={{ fontFamily: "var(--font-badge)", fontSize: "0.8rem", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase" }}
+            style={{ fontFamily: F.badge, fontSize: "0.8rem", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase" }}
           >
             Kit Recursos da Copa
           </p>
@@ -68,10 +69,10 @@ export default function Pricing() {
 
           <p
             className="mb-1 leading-none text-[#F5C400]"
-            style={{ fontFamily: "var(--font-display)", fontSize: "clamp(2.8rem,8vw,3.5rem)" }}
+            style={{ fontFamily: F.display, fontSize: "clamp(2.8rem,8vw,3.5rem)" }}
             aria-label="Por R$ PREÇO PROMOCIONAL"
           >
-            <sup style={{ fontSize: "1.4rem", fontFamily: "var(--font-body)", fontWeight: 800, verticalAlign: "super" }}>R$</sup>
+            <sup style={{ fontSize: "1.4rem", fontFamily: F.body, fontWeight: 800, verticalAlign: "super" }}>R$</sup>
             [PREÇO]
           </p>
 
@@ -83,9 +84,9 @@ export default function Pricing() {
             href="#"
             className="mb-4 flex w-full items-center justify-center rounded-full bg-[#F5C400] py-4 text-[#145530] transition-transform hover:-translate-y-0.5 active:scale-95"
             style={{
-              fontFamily: "var(--font-display)",
+              fontFamily: F.display,
               fontSize: "clamp(1rem,3vw,1.1rem)",
-              boxShadow: "0 4px 0 #d4a900",
+              boxShadow: `0 4px 0 ${C.amareloD}`,
             }}
             aria-label="Quero o Kit Recursos da Copa"
           >

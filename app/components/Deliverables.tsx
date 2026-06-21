@@ -1,27 +1,29 @@
+import { C, F, shadow } from "@/app/lib/tokens";
+
 const items = [
   {
     icon: "📄",
     title: "Kit completo em PDF para imprimir",
     detail: "Alta resolução — funciona em impressora doméstica ou gráfica",
-    accent: "#1A6B3A",
+    accent: C.verde,
   },
   {
     icon: "🎥",
     title: "Aulas explicativas do Kit",
     detail: "Vídeos curtos mostrando como aplicar cada recurso",
-    accent: "#F5C400",
+    accent: C.amarelo,
   },
   {
     icon: "📋",
     title: "Manual de formas de uso",
     detail: "Sugestões para sala de aula, reforço, atendimento individual e clínica",
-    accent: "#0047AB",
+    accent: C.azul,
   },
   {
     icon: "✅",
     title: "Alinhado à BNCC",
     detail: "Habilidades mapeadas para cada recurso do kit",
-    accent: "#1A6B3A",
+    accent: C.verde,
   },
 ];
 
@@ -37,14 +39,14 @@ export default function Deliverables() {
         <div className="mb-10 text-center">
           <span
             className="mb-3 inline-block rounded-full bg-[#1A6B3A] px-4 py-1.5 text-white"
-            style={{ fontFamily: "var(--font-badge)", fontSize: "0.75rem", fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase" }}
+            style={{ fontFamily: F.badge, fontSize: "0.75rem", fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase" }}
           >
             Tudo que vem no kit
           </span>
           <h2
             id="del-title"
             className="text-[#1C1C1C]"
-            style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.6rem,4vw,2.4rem)" }}
+            style={{ fontFamily: F.display, fontSize: "clamp(1.6rem,4vw,2.4rem)" }}
           >
             Veja tudo que você vai receber:
           </h2>
@@ -58,11 +60,11 @@ export default function Deliverables() {
             <div
               key={i}
               className="flex items-start gap-4 rounded-2xl bg-white p-5 transition-transform hover:-translate-y-0.5"
-              style={{ borderLeft: `4px solid ${item.accent}`, boxShadow: "0 2px 12px rgba(0,0,0,0.08)" }}
+              style={{ borderLeft: `4px solid ${item.accent}`, boxShadow: shadow.card }}
             >
               <div
                 className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl text-xl"
-                style={{ background: i === 1 ? "#fffbe6" : i === 2 ? "#dce8ff" : "#e8f5ee" }}
+                style={{ background: i === 1 ? "#fffbe6" : i === 2 ? C.azulLight : C.verdeLight }}
                 aria-hidden="true"
               >
                 {item.icon}
@@ -70,7 +72,7 @@ export default function Deliverables() {
               <div>
                 <p
                   className="text-[#1C1C1C]"
-                  style={{ fontFamily: "var(--font-display)", fontSize: "1rem", marginBottom: "0.2rem" }}
+                  style={{ fontFamily: F.display, fontSize: "1rem", marginBottom: "0.2rem" }}
                 >
                   {item.title}
                 </p>

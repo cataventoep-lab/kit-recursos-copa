@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { C, F } from "@/app/lib/tokens";
 
 const testimonials = [
   {
@@ -35,14 +36,14 @@ export default function Testimonials() {
         <div className="mb-10 text-center">
           <span
             className="mb-3 inline-block rounded-full bg-[#F5C400] px-4 py-1.5 text-[#145530]"
-            style={{ fontFamily: "var(--font-badge)", fontSize: "0.75rem", fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase" }}
+            style={{ fontFamily: F.badge, fontSize: "0.75rem", fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase" }}
           >
             O que as professoras estão dizendo
           </span>
           <h2
             id="social-title"
             className="text-white"
-            style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.6rem,4vw,2.4rem)" }}
+            style={{ fontFamily: F.display, fontSize: "clamp(1.6rem,4vw,2.4rem)" }}
           >
             Quem já está usando?
           </h2>
@@ -66,7 +67,7 @@ export default function Testimonials() {
               </p>
               <p
                 className="text-[#F5C400]"
-                style={{ fontFamily: "var(--font-badge)", fontSize: "0.78rem", fontWeight: 700, letterSpacing: "0.05em" }}
+                style={{ fontFamily: F.badge, fontSize: "0.78rem", fontWeight: 700, letterSpacing: "0.05em" }}
               >
                 {t.author}
               </p>
@@ -82,9 +83,9 @@ export default function Testimonials() {
             href="#preco"
             className="inline-flex items-center justify-center gap-2 rounded-full bg-[#F5C400] px-8 py-4 text-[#145530] transition-transform hover:-translate-y-0.5 active:scale-95"
             style={{
-              fontFamily: "var(--font-display)",
+              fontFamily: F.display,
               fontSize: "clamp(1rem,3vw,1.1rem)",
-              boxShadow: "0 4px 0 #d4a900, 0 6px 20px rgba(245,196,0,0.35)",
+              boxShadow: `0 4px 0 ${C.amareloD}, 0 6px 20px rgba(245,196,0,0.35)`,
             }}
             aria-label="Quero o Kit Recursos da Copa"
           >

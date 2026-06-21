@@ -1,3 +1,5 @@
+import { C, F } from "@/app/lib/tokens";
+
 const steps = [
   {
     n: 1,
@@ -30,14 +32,14 @@ export default function HowItWorks() {
         <div>
           <span
             className="mb-3 inline-block rounded-full bg-[#1A6B3A] px-4 py-1.5 text-white"
-            style={{ fontFamily: "var(--font-badge)", fontSize: "0.75rem", fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase" }}
+            style={{ fontFamily: F.badge, fontSize: "0.75rem", fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase" }}
           >
             Sem complicação
           </span>
           <h2
             id="how-title"
             className="mb-6 text-[#1C1C1C]"
-            style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.6rem,4vw,2.4rem)" }}
+            style={{ fontFamily: F.display, fontSize: "clamp(1.6rem,4vw,2.4rem)" }}
           >
             Como funciona na prática:
           </h2>
@@ -47,7 +49,7 @@ export default function HowItWorks() {
               <li key={s.n} className="flex items-start gap-4">
                 <span
                   className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#1A6B3A] text-white"
-                  style={{ fontFamily: "var(--font-display)", fontSize: "1.1rem", boxShadow: "0 2px 8px rgba(26,107,58,0.3)" }}
+                  style={{ fontFamily: F.display, fontSize: "1.1rem", boxShadow: "0 2px 8px rgba(26,107,58,0.3)" }}
                   aria-hidden="true"
                 >
                   {s.n}

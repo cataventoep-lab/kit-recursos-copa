@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { C, F, shadow } from "@/app/lib/tokens";
 
 export default function Creators() {
   return (
@@ -15,8 +16,8 @@ export default function Creators() {
           <div
             className="flex h-44 w-44 items-center justify-center rounded-full text-6xl"
             style={{
-              background: "linear-gradient(135deg,#e8f5ee 0%,#F0EFEB 100%)",
-              border: "4px solid #1A6B3A",
+              background: `linear-gradient(135deg,${C.verdeLight} 0%,${C.cinza} 100%)`,
+              border: `4px solid ${C.verde}`,
               boxShadow: "0 4px 20px rgba(26,107,58,0.2)",
             }}
             role="img"
@@ -30,7 +31,7 @@ export default function Creators() {
         <div>
           <span
             className="mb-3 inline-block rounded-full bg-[#1A6B3A] px-4 py-1.5 text-white"
-            style={{ fontFamily: "var(--font-badge)", fontSize: "0.75rem", fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase" }}
+            style={{ fontFamily: F.badge, fontSize: "0.75rem", fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase" }}
           >
             Feito por quem está na sala de aula
           </span>
@@ -38,7 +39,7 @@ export default function Creators() {
           <h2
             id="criadoras-title"
             className="mb-4 text-[#1C1C1C]"
-            style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.6rem,4vw,2.2rem)" }}
+            style={{ fontFamily: F.display, fontSize: "clamp(1.6rem,4vw,2.2rem)" }}
           >
             Quem são as criadoras?
           </h2>
@@ -57,9 +58,9 @@ export default function Creators() {
             href="#preco"
             className="inline-flex items-center justify-center gap-2 rounded-full bg-[#1A6B3A] px-8 py-4 text-white transition-transform hover:-translate-y-0.5 active:scale-95"
             style={{
-              fontFamily: "var(--font-display)",
+              fontFamily: F.display,
               fontSize: "clamp(0.95rem,2.5vw,1.05rem)",
-              boxShadow: "0 4px 0 #145530, 0 6px 20px rgba(26,107,58,0.30)",
+              boxShadow: shadow.btnGreen,
             }}
             aria-label="Quero transformar minhas aulas com o Kit"
           >

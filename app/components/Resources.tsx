@@ -1,3 +1,5 @@
+import { C, F, shadow } from "@/app/lib/tokens";
+
 type Resource = {
   num: string;
   badge: string;
@@ -71,14 +73,14 @@ export default function Resources() {
         <div className="mb-10 text-center">
           <span
             className="mb-3 inline-block rounded-full bg-[#F5C400] px-4 py-1.5 text-[#145530]"
-            style={{ fontFamily: "var(--font-badge)", fontSize: "0.75rem", fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase" }}
+            style={{ fontFamily: F.badge, fontSize: "0.75rem", fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase" }}
           >
             ⚽ Os 4 Recursos do Kit
           </span>
           <h2
             id="rec-title"
             className="text-[#1C1C1C]"
-            style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.6rem,4vw,2.4rem)" }}
+            style={{ fontFamily: F.display, fontSize: "clamp(1.6rem,4vw,2.4rem)" }}
           >
             Cada um com um propósito pedagógico claro —
           </h2>
@@ -93,7 +95,7 @@ export default function Resources() {
             <article
               key={r.num}
               className="overflow-hidden rounded-2xl border border-black/[0.06]"
-              style={{ boxShadow: "0 4px 20px rgba(0,0,0,0.10)" }}
+              style={{ boxShadow: shadow.cardLg }}
               aria-label={`${r.num}: ${r.title}`}
             >
               {/*
@@ -113,7 +115,7 @@ export default function Resources() {
                     <span
                       className="inline-block rounded-lg border-2 border-dashed px-4 py-2"
                       style={{
-                        fontFamily: "var(--font-badge)",
+                        fontFamily: F.badge,
                         fontSize: "0.72rem",
                         fontWeight: 600,
                         letterSpacing: "0.08em",
@@ -131,19 +133,19 @@ export default function Resources() {
                 <div className="bg-white p-6">
                   <p
                     className="mb-1 opacity-60"
-                    style={{ fontFamily: "var(--font-badge)", fontSize: "0.75rem", fontWeight: 700, letterSpacing: "0.08em" }}
+                    style={{ fontFamily: F.badge, fontSize: "0.75rem", fontWeight: 700, letterSpacing: "0.08em" }}
                   >
                     {r.num}
                   </p>
                   <span
                     className={`mb-3 inline-block rounded-full px-3 py-1 ${badgeClasses[r.badgeStyle]}`}
-                    style={{ fontFamily: "var(--font-badge)", fontSize: "0.72rem", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase" }}
+                    style={{ fontFamily: F.badge, fontSize: "0.72rem", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase" }}
                   >
                     {r.badge}
                   </span>
                   <h3
                     className="mb-3 text-[#1C1C1C]"
-                    style={{ fontFamily: "var(--font-display)", fontSize: "1.5rem" }}
+                    style={{ fontFamily: F.display, fontSize: "1.5rem" }}
                   >
                     {r.title}
                   </h3>
@@ -158,7 +160,7 @@ export default function Resources() {
                   <div className="flex flex-wrap gap-1.5" aria-label="Habilidades pedagógicas">
                     <span
                       className="rounded-full border border-black/[0.08] bg-[#F0EFEB] px-3 py-1 text-[#4a4a4a]"
-                      style={{ fontFamily: "var(--font-badge)", fontSize: "0.72rem", fontWeight: 600, letterSpacing: "0.05em" }}
+                      style={{ fontFamily: F.badge, fontSize: "0.72rem", fontWeight: 600, letterSpacing: "0.05em" }}
                     >
                       Habilidades a definir
                     </span>

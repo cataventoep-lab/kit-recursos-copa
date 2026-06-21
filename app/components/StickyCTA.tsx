@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { C, F } from "@/app/lib/tokens";
 
 export default function StickyCTA() {
   return (
@@ -14,7 +15,7 @@ export default function StickyCTA() {
         </p>
         <p
           className="leading-none text-[#1A6B3A]"
-          style={{ fontFamily: "var(--font-display)", fontSize: "1.2rem" }}
+          style={{ fontFamily: F.display, fontSize: "1.2rem" }}
         >
           R$ [Y]
         </p>
@@ -23,9 +24,9 @@ export default function StickyCTA() {
         href="#preco"
         className="flex flex-1 items-center justify-center rounded-full bg-[#F5C400] py-3 text-[#145530] transition-transform active:scale-95"
         style={{
-          fontFamily: "var(--font-display)",
+          fontFamily: F.display,
           fontSize: "0.95rem",
-          boxShadow: "0 4px 0 #d4a900",
+          boxShadow: `0 4px 0 ${C.amareloD}`,
         }}
         aria-label="Quero o Kit agora"
       >

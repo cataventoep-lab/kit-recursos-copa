@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { C, F, shadow } from "@/app/lib/tokens";
 
 export default function FinalCTA() {
   return (
@@ -21,7 +22,7 @@ export default function FinalCTA() {
         <h2
           id="cta-final-title"
           className="mb-3 text-[#145530]"
-          style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.8rem,5vw,2.8rem)" }}
+          style={{ fontFamily: F.display, fontSize: "clamp(1.8rem,5vw,2.8rem)" }}
         >
           Pronta para usar a Copa a favor da sua aula?
         </h2>
@@ -34,9 +35,9 @@ export default function FinalCTA() {
           href="#preco"
           className="inline-flex items-center justify-center rounded-full bg-[#1A6B3A] px-10 py-4 text-white transition-transform hover:-translate-y-0.5 active:scale-95"
           style={{
-            fontFamily: "var(--font-display)",
+            fontFamily: F.display,
             fontSize: "clamp(1rem,3vw,1.15rem)",
-            boxShadow: "0 4px 0 #145530, 0 6px 20px rgba(26,107,58,0.30)",
+            boxShadow: shadow.btnGreen,
           }}
           aria-label="Quero o Kit Recursos da Copa agora"
         >
