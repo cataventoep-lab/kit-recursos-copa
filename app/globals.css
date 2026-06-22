@@ -147,10 +147,10 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .topbar {
   background: var(--verde-dark);
   color: #fff;
-  font-family: var(--font-badge);
-  font-size: 0.8rem;
+  font-family: var(--font-body);
+  font-size: 0.82rem;
   font-weight: 600;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.01em;
   text-align: center;
   padding: 0.55rem var(--px);
 }

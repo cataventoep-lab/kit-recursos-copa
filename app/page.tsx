@@ -382,7 +382,7 @@ export default function Home() {
         {/* SEÇÃO A — O que está incluído (branca) */}
         <section className="preco-includes" aria-labelledby="preco-title">
           <div className="preco-includes__inner">
-            <span className="eyebrow eyebrow--verde">O que está incluído</span>
+            <span className="eyebrow eyebrow--verde">O que vem no kit</span>
             <h2 className="section-title" id="preco-title">
               Tudo que você precisa para dar uma aula incrível
             </h2>
@@ -493,7 +493,7 @@ export default function Home() {
       <section className="cta-final" aria-labelledby="cta-final-title">
         <div className="container">
           <h2 id="cta-final-title">Pronta para usar a Copa a favor da sua aula?</h2>
-          <p>Compre agora, imprima hoje e aplique na próxima aula.</p>
+          <p>Compre agora, imprima hoje e utilize na próxima aula 😊</p>
 
           <a href="#preco" className="btn btn--verde" style={{ fontSize: "1.1rem", padding: "1.1rem 2.5rem" }} aria-label="Quero o Kit Recursos da Copa agora">
             QUERO O KIT RECURSOS DA COPA →
