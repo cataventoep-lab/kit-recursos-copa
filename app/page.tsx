@@ -397,12 +397,14 @@ export default function Home() {
             </div>
 
             <div className="preco__card" aria-label="Informações de preço">
+              <div className="preco__discount-badge">🔥 71% OFF — Oferta limitada</div>
               <div className="preco__card-name">Kit Recursos da Copa</div>
-              <div className="preco__card-de">De <s>R$ 97,90</s></div>
+              <div className="preco__card-de">De R$ 97,90</div>
               <div className="preco__card-price">
                 <sup>R$</sup>27,90
               </div>
               <div className="preco__card-installment">Ou 2x de R$ 14,69 sem juros</div>
+              <p className="preco__urgency">⏳ Esse preço pode subir a qualquer momento.</p>
 
               <a href="#" className="btn btn--primary preco__card-btn" aria-label="Quero o Kit Recursos da Copa">
                 QUERO O KIT AGORA →
@@ -410,7 +412,7 @@ export default function Home() {
 
               <div className="preco__card-guarantee">
                 <span aria-hidden="true">🔒</span>
-                <span>Garantia de 7 dias — devolvemos 100% do seu dinheiro, sem perguntas.</span>
+                <span><strong>Garantia de 7 dias</strong> — devolvemos 100% do seu dinheiro, sem perguntas.</span>
               </div>
 
               <div className="preco__seals" aria-label="Selos de confiança">

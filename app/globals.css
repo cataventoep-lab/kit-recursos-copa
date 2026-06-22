@@ -746,21 +746,40 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
    SECTION 7 — PREÇO
 ============================================================ */
 .preco {
-  background: var(--branco);
+  background: linear-gradient(160deg, #0d5c30 0%, #1a6b3a 60%, #0d5c30 100%);
   padding: clamp(3rem, 8vw, 5rem) var(--px);
+  position: relative;
+  overflow: hidden;
+}
+.preco::before {
+  content: '⚽';
+  position: absolute;
+  font-size: 18rem;
+  opacity: 0.04;
+  right: -3rem;
+  bottom: -4rem;
+  line-height: 1;
+  pointer-events: none;
 }
 .preco__inner {
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
   align-items: start;
+  max-width: 560px;
+  margin: 0 auto;
 }
+.preco__includes {
+  color: rgba(255,255,255,0.9);
+}
+.preco__includes .section-title { color: #fff; }
+.preco__includes .eyebrow { opacity: 0.85; }
 
 .preco__includes h3 {
   font-family: var(--font-display);
   font-size: 1.3rem;
   margin-bottom: 1.25rem;
-  color: var(--texto);
+  color: #fff;
 }
 .preco__list {
   list-style: none;
@@ -774,10 +793,11 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   gap: 0.65rem;
   font-size: 0.95rem;
   line-height: 1.5;
+  color: rgba(255,255,255,0.9);
 }
 .preco__list li::before {
   content: '✔';
-  color: var(--verde);
+  color: var(--amarelo);
   font-weight: 900;
   font-size: 1rem;
   flex-shrink: 0;
@@ -785,44 +805,55 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 
 .preco__card {
-  background: var(--verde);
+  background: rgba(255,255,255,0.08);
+  border: 2px solid rgba(255,255,255,0.18);
   border-radius: 20px;
   padding: 2rem;
   color: #fff;
-  box-shadow: 0 8px 32px rgba(26,107,58,0.25);
   position: relative;
   overflow: hidden;
+  text-align: center;
 }
-.preco__card::before {
-  content: '';
-  position: absolute;
-  top: -60px; right: -60px;
-  width: 180px; height: 180px;
-  background: rgba(255,255,255,0.06);
-  border-radius: 50%;
+
+/* Badge de desconto */
+.preco__discount-badge {
+  display: inline-block;
+  background: #e63946;
+  color: #fff;
+  font-family: var(--font-badge);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  padding: 0.35rem 1rem;
+  border-radius: 100px;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  box-shadow: 0 3px 12px rgba(230,57,70,0.5);
 }
+
 .preco__card-name {
   font-family: var(--font-badge);
   font-size: 0.8rem;
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: rgba(255,255,255,0.7);
-  margin-bottom: 0.75rem;
+  color: rgba(255,255,255,0.6);
+  margin-bottom: 0.5rem;
 }
 .preco__card-de {
-  font-size: 0.95rem;
-  color: rgba(255,255,255,0.6);
+  font-size: 1rem;
+  color: rgba(255,255,255,0.5);
   text-decoration: line-through;
   margin-bottom: 0.25rem;
 }
 .preco__card-price {
   font-family: var(--font-display);
-  font-size: clamp(3.6rem, 10vw, 4.8rem);
+  font-size: clamp(3.8rem, 12vw, 5.2rem);
   font-weight: 700;
   color: var(--amarelo);
   line-height: 1;
   margin-bottom: 0.4rem;
+  text-shadow: 0 2px 12px rgba(245,196,0,0.3);
 }
 .preco__card-price sup {
   font-size: 1.6rem;
@@ -831,34 +862,51 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   font-weight: 900;
 }
 .preco__card-installment {
-  font-size: 0.9rem;
-  color: rgba(255,255,255,0.75);
-  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+  color: rgba(255,255,255,0.7);
+  margin-bottom: 1.75rem;
 }
-.preco__card-btn { width: 100%; margin-bottom: 1rem; }
+
+/* Urgência */
+.preco__urgency {
+  font-size: 0.82rem;
+  color: rgba(255,255,255,0.65);
+  margin-top: -1.25rem;
+  margin-bottom: 1.25rem;
+  font-style: italic;
+}
+
+.preco__card-btn {
+  width: 100%;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  padding: 1.1rem 1.5rem;
+}
 .preco__card-guarantee {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  font-size: 0.8rem;
-  color: rgba(255,255,255,0.75);
-  background: rgba(255,255,255,0.1);
-  border-radius: 8px;
-  padding: 0.6rem 0.75rem;
+  font-size: 0.82rem;
+  color: rgba(255,255,255,0.7);
+  background: rgba(255,255,255,0.08);
+  border-radius: 10px;
+  padding: 0.7rem 0.9rem;
+  margin-bottom: 1rem;
+  text-align: left;
 }
 .preco__seals {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.6rem;
+  gap: 0.5rem;
   justify-content: center;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 }
 .preco__seal {
   display: flex;
   align-items: center;
   gap: 0.35rem;
   font-size: 0.78rem;
-  color: rgba(255,255,255,0.75);
+  color: rgba(255,255,255,0.65);
   font-weight: 600;
 }
 
