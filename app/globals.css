@@ -426,9 +426,8 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   position: relative;
   height: 100%;
 }
-/* Desktop: 2 imagens por vez = cada slide ocupa 50%, translate usa 50% */
+/* Desktop: 2 imagens por vez — tamanho vem do JS via style inline */
 @media (min-width: 900px) {
-  .carousel__slide { flex: 0 0 50%; }
   .carousel { --slide-step: 50%; }
 }
 .carousel__dots {
