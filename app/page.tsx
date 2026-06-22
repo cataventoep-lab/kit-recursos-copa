@@ -127,12 +127,11 @@ export default function Home() {
 
           {/* Recurso 01 */}
           <article className="recurso-card" aria-label="Recurso 01: É GOOL!">
-            <div className="recurso-card__img" aria-label="Foto do recurso É GOOL!">
-              <div className="recurso-card__placeholder">
-                <div className="recurso-card__placeholder-emoji" aria-hidden="true">⚽</div>
-                <div className="recurso-card__placeholder-text">
-                  Foto do recurso<br />a inserir
-                </div>
+            <div className="recurso-card__img">
+              <div className="recurso-gallery">
+                {[1,2,3,4].map(n => (
+                  <Image key={n} src={`/jogos/%C3%89%20GOL/egol-${n}.jpg`} alt={`É GOOL! – foto ${n}`} width={320} height={240} className="recurso-gallery__img" />
+                ))}
               </div>
             </div>
             <div className="recurso-card__body">
@@ -154,12 +153,11 @@ export default function Home() {
 
           {/* Recurso 02 */}
           <article className="recurso-card" aria-label="Recurso 02: AQUI É O BRASIL">
-            <div className="recurso-card__img" aria-label="Foto do recurso Aqui É o Brasil">
-              <div className="recurso-card__placeholder">
-                <div className="recurso-card__placeholder-emoji" aria-hidden="true">🇧🇷</div>
-                <div className="recurso-card__placeholder-text">
-                  Foto do recurso<br />a inserir
-                </div>
+            <div className="recurso-card__img">
+              <div className="recurso-gallery">
+                {[1,2,3,4].map(n => (
+                  <Image key={n} src={`/jogos/AQUI%20%C3%89%20O%20BRASIL/aqui-brasil-${n}.jpg`} alt={`Aqui É o Brasil – foto ${n}`} width={320} height={240} className="recurso-gallery__img" />
+                ))}
               </div>
             </div>
             <div className="recurso-card__body">
@@ -181,12 +179,11 @@ export default function Home() {
 
           {/* Recurso 03 */}
           <article className="recurso-card" aria-label="Recurso 03: MATEMÁTICA DA COPA">
-            <div className="recurso-card__img" aria-label="Foto do recurso Matemática da Copa">
-              <div className="recurso-card__placeholder">
-                <div className="recurso-card__placeholder-emoji" aria-hidden="true">🔢</div>
-                <div className="recurso-card__placeholder-text">
-                  Foto do recurso<br />a inserir
-                </div>
+            <div className="recurso-card__img">
+              <div className="recurso-gallery">
+                {[1,2,3,4].map(n => (
+                  <Image key={n} src={`/jogos/MATEMATICA%20DA%20COPA/matematica-${n}.jpg`} alt={`Matemática da Copa – foto ${n}`} width={320} height={240} className="recurso-gallery__img" />
+                ))}
               </div>
             </div>
             <div className="recurso-card__body">
@@ -207,12 +204,11 @@ export default function Home() {
 
           {/* Recurso 04 */}
           <article className="recurso-card" aria-label="Recurso 04: CAMPEÃO!">
-            <div className="recurso-card__img" aria-label="Foto do recurso Campeão">
-              <div className="recurso-card__placeholder">
-                <div className="recurso-card__placeholder-emoji" aria-hidden="true">🏆</div>
-                <div className="recurso-card__placeholder-text">
-                  Foto do recurso<br />a inserir
-                </div>
+            <div className="recurso-card__img">
+              <div className="recurso-gallery">
+                {[1,2,3].map(n => (
+                  <Image key={n} src={`/jogos/CAMP%C3%8A%C3%83O/campeao-${n}.${n === 1 ? "jpeg" : "jpg"}`} alt={`Campeão! – foto ${n}`} width={320} height={240} className="recurso-gallery__img" />
+                ))}
               </div>
             </div>
             <div className="recurso-card__body">
