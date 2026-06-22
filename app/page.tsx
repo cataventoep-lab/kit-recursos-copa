@@ -18,7 +18,7 @@ export default function Home() {
               <div className="hero__badge">🏆 Kit Pedagógico Temático</div>
 
               <h1 className="hero__title">
-                A <span className="highlight-copa">Copa</span> é o gancho.<br />
+                A <span className="highlight-copa">Copa</span> é o gancho.{" "}
                 O aprendizado é o <span className="highlight-gol">gol.</span>
               </h1>
 
