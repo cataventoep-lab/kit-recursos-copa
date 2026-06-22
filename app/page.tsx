@@ -456,9 +456,9 @@ export default function Home() {
                 <Image
                   src="/foto_autoras.jpeg"
                   alt="Professoras Fernanda e Luiza, criadoras do Kit Recursos da Copa"
-                  width={180}
-                  height={180}
-                  style={{ width: "100%", height: "100%", objectFit: "cover", borderRadius: "50%" }}
+                  width={400}
+                  height={400}
+                  style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top center", borderRadius: "50%" }}
                 />
               </div>
             </div>
