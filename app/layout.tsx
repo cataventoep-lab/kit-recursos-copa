@@ -1,32 +1,25 @@
 import type { Metadata } from "next";
-import { Fredoka, Nunito, Barlow_Condensed, Bebas_Neue } from "next/font/google";
+import { Fredoka, Nunito, Barlow_Condensed } from "next/font/google";
 import "./globals.css";
 
 const fredoka = Fredoka({
-  weight: "700",
+  weight: ["500", "600", "700"],
   subsets: ["latin"],
-  variable: "--font-display",
+  variable: "--font-fredoka",
   display: "swap",
 });
 
 const nunito = Nunito({
   weight: ["400", "600", "700", "800", "900"],
   subsets: ["latin"],
-  variable: "--font-body",
-  display: "swap",
-});
-
-const bebas = Bebas_Neue({
-  weight: "400",
-  subsets: ["latin"],
-  variable: "--font-hero",
+  variable: "--font-nunito",
   display: "swap",
 });
 
 const barlow = Barlow_Condensed({
   weight: ["500", "600", "700"],
   subsets: ["latin"],
-  variable: "--font-badge",
+  variable: "--font-barlow",
   display: "swap",
 });
 
@@ -40,7 +33,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html
       lang="pt-BR"
-      className={`${fredoka.variable} ${nunito.variable} ${barlow.variable} ${bebas.variable}`}
+      className={`${fredoka.variable} ${nunito.variable} ${barlow.variable}`}
     >
       <body>{children}</body>
     </html>
