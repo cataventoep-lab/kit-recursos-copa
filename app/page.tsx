@@ -375,30 +375,28 @@ export default function Home() {
         <span>⚽</span><span>🏆</span><span>🇧🇷</span><span>⚽</span><span>🥅</span><span>⚽</span><span>🏆</span><span>🇧🇷</span><span>⚽</span><span>🥅</span>
       </div>
 
-      {/* SECTION 7 — O QUE ESTÁ INCLUÍDO */}
-      <section className="preco-includes-solo" id="preco" aria-labelledby="preco-title">
+      {/* SECTION 7 — O QUE ESTÁ INCLUÍDO + OFERTA */}
+      <section className="preco" id="preco" aria-labelledby="preco-title">
         <div className="container">
-          <div className="preco-includes-solo__inner">
-            <span className="eyebrow eyebrow--verde">O que está incluído</span>
-            <h2 className="section-title" id="preco-title">
-              Tudo que você precisa para dar uma aula incrível
-            </h2>
-            <ul className="preco__list preco__list--cols" aria-label="Lista de itens incluídos">
-              <li>4 recursos pedagógicos imprimíveis em PDF</li>
-              <li>Aulas explicativas em vídeo para cada recurso</li>
-              <li>Manual de formas de uso (sala, clínica, reforço)</li>
-              <li>Habilidades da BNCC mapeadas</li>
-              <li>Versões diferenciadas por nível</li>
-              <li>Acesso vitalício ao material digital</li>
-            </ul>
-          </div>
-        </div>
-      </section>
+          <div className="preco__inner">
 
-      {/* SECTION 7b — OFERTA / PREÇO */}
-      <section className="preco" aria-label="Oferta do Kit Recursos da Copa">
-        <div className="container">
-          <div className="preco__card-wrap">
+            {/* Coluna esquerda — o que está incluído */}
+            <div className="preco__includes">
+              <span className="eyebrow eyebrow--amarelo">O que está incluído</span>
+              <h2 className="section-title preco__includes-title" id="preco-title">
+                Tudo que você precisa para dar uma aula incrível
+              </h2>
+              <ul className="preco__list" aria-label="Lista de itens incluídos">
+                <li>4 recursos pedagógicos imprimíveis em PDF</li>
+                <li>Aulas explicativas em vídeo para cada recurso</li>
+                <li>Manual de formas de uso (sala, clínica, reforço)</li>
+                <li>Habilidades da BNCC mapeadas</li>
+                <li>Versões diferenciadas por nível</li>
+                <li>Acesso vitalício ao material digital</li>
+              </ul>
+            </div>
+
+            {/* Coluna direita — card de oferta */}
             <div className="preco__card" aria-label="Informações de preço">
               <div className="preco__discount-badge">🔥 71% OFF — Oferta limitada</div>
               <div className="preco__card-name">Kit Recursos da Copa</div>
@@ -424,6 +422,7 @@ export default function Home() {
                 <span className="preco__seal"><span aria-hidden="true">📄</span> PDF imprimível</span>
               </div>
             </div>
+
           </div>
         </div>
       </section>
