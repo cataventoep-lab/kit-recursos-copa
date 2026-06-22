@@ -7,8 +7,7 @@ export default function Home() {
     <>
       {/* SECTION 1 — BARRA DE TOPO */}
       <div className="topbar" role="banner">
-        ⚽ <strong>Exclusivo para Professoras dos Anos Iniciais</strong>
-        <span>&nbsp;•&nbsp; 1º ao 5º ano</span>
+        ⚽ <strong>Atenção:</strong>&nbsp; Exclusivo para Professoras Particulares, Psicopedagogas/Neuropsicopedagogas, Pedagogas de 1º ao 5º ano
       </div>
 
       {/* SECTION 2 — HERO */}
@@ -24,8 +23,9 @@ export default function Home() {
               </h1>
 
               <p className="hero__sub">
-                Um kit de recursos com temática da Copa para trabalhar Português e
-                Matemática com seus alunos.
+                Um kit com 4 recursos envolvendo a temática da Copa para desenvolver habilidades,
+                cumprir desafios e revisar conteúdos de português, matemática ou qualquer outra
+                disciplina com seus estudantes de 1º ao 5º ano.
               </p>
 
               <div className="hero__cta-wrap">
@@ -40,7 +40,7 @@ export default function Home() {
 
               <div className="hero__social" style={{ marginTop: "1.25rem" }}>
                 <span className="stars">★★★★★</span>
-                <span>Mais de 500 professoras já estão usando em sala</span>
+                <span>Mais de 500 professoras já estão usando nossos recursos em sala e/ou em atendimentos individuais/clínicos</span>
               </div>
             </div>
 
@@ -58,6 +58,11 @@ export default function Home() {
         </div>
       </section>
 
+      {/* DIVISOR FLUTUANTE */}
+      <div className="section-divider" aria-hidden="true">
+        <span>⚽</span><span>🏆</span><span>🇧🇷</span><span>⚽</span><span>🥅</span><span>⚽</span><span>🏆</span><span>🇧🇷</span><span>⚽</span><span>🥅</span>
+      </div>
+
       {/* SECTION 3 — O QUE VOCÊ VAI RECEBER */}
       <section className="deliverables" id="receber" aria-labelledby="del-title">
         <div className="container">
@@ -67,7 +72,7 @@ export default function Home() {
               Veja tudo que você vai receber:
             </h2>
             <p className="section-sub">
-              Pronto para imprimir, aplicar e guardar para sempre.
+              Pronto para imprimir e usar sempre que quiser!
             </p>
           </div>
 
@@ -115,6 +120,11 @@ export default function Home() {
         </div>
       </section>
 
+      {/* DIVISOR FLUTUANTE */}
+      <div className="section-divider" aria-hidden="true">
+        <span>🥅</span><span>⚽</span><span>🏆</span><span>🇧🇷</span><span>⚽</span><span>🥅</span><span>⚽</span><span>🏆</span><span>🇧🇷</span><span>⚽</span>
+      </div>
+
       {/* SECTION 4 — OS 4 RECURSOS */}
       <section className="recursos" id="recursos" aria-labelledby="rec-title">
         <div className="container">
@@ -136,14 +146,13 @@ export default function Home() {
               <span className="recurso-card__badge badge--verde">⚽ Recurso Versátil</span>
               <h3 className="recurso-card__title">É GOOL!</h3>
               <p className="recurso-card__desc">
-                Bolas de futebol e mini-trave para trabalhar leitura e escrita de um
-                jeito lúdico: monte palavras, forme frases e marque os &ldquo;gols&rdquo;
-                do aprendizado a cada acerto.
+                Cartaz envelope para escrever desafios — de leitura, escrita, matemática ou
+                revisão de um conteúdo. Cada seleção cumpre o desafio e marca gols no placar!
               </p>
               <div className="recurso-card__tags" aria-label="Habilidades pedagógicas">
-                <span className="tag">Alfabetização</span>
                 <span className="tag">Leitura</span>
                 <span className="tag">Escrita</span>
+                <span className="tag">Revisão</span>
               </div>
             </div>
           </article>
@@ -156,11 +165,11 @@ export default function Home() {
             <div className="recurso-card__body">
               <div className="recurso-card__number">RECURSO 02</div>
               <span className="recurso-card__badge badge--amarelo">🃏 Cards • Jogo</span>
-              <h3 className="recurso-card__title">AQUI É O BRASIL</h3>
+              <h3 className="recurso-card__title">AQUI É O BRASIL!</h3>
               <p className="recurso-card__desc">
-                Cards ilustrados com elementos da cultura brasileira — brigadeiro,
-                onça-pintada, Cataratas do Iguaçu e muito mais — para jogos de leitura,
-                classificação e ampliação de vocabulário.
+                40 cards com animais, objetos, comidas e lugares brasileiros. O desafio é
+                descobrir quem &ldquo;eu sou&rdquo;. Inclui tabelas para formação de listas
+                de palavras e frases.
               </p>
               <div className="recurso-card__tags" aria-label="Habilidades pedagógicas">
                 <span className="tag">Vocabulário</span>
@@ -180,8 +189,9 @@ export default function Home() {
               <span className="recurso-card__badge badge--azul">➕ Matemática • 4 Operações</span>
               <h3 className="recurso-card__title">MATEMÁTICA DA COPA</h3>
               <p className="recurso-card__desc">
-                Tabuleiro &ldquo;Adição da Copa&rdquo; com bandeiras e legenda numérica
-                para praticar as quatro operações de forma concreta, visual e divertida.
+                Tabuleiros com as 4 operações, diferentes legendas e 10 seleções para efetuar
+                cálculos. O desafio é encontrar o resultado considerando o valor que cada
+                seleção representa.
               </p>
               <div className="recurso-card__tags" aria-label="Habilidades pedagógicas">
                 <span className="tag">Adição</span>
@@ -205,9 +215,9 @@ export default function Home() {
               <span className="recurso-card__badge badge--verde">🎲 Jogo Versátil</span>
               <h3 className="recurso-card__title">CAMPEÃO!</h3>
               <p className="recurso-card__desc">
-                Jogo versátil com a trave &ldquo;Campeão!&rdquo; para revisar conteúdos,
-                fixar habilidades e fechar a aula com chave de ouro — adaptável a qualquer
-                tema da turma.
+                120 desafios com a temática da Copa — de matemática, português, conhecimentos
+                gerais e alfabetização. O desafio é responder as perguntas até fazer o gol,
+                pulando pelas bolas de futebol.
               </p>
               <div className="recurso-card__tags" aria-label="Habilidades pedagógicas">
                 <span className="tag">Revisão</span>
@@ -218,6 +228,11 @@ export default function Home() {
           </article>
         </div>
       </section>
+
+      {/* DIVISOR FLUTUANTE */}
+      <div className="section-divider" aria-hidden="true">
+        <span>⚽</span><span>🏆</span><span>🇧🇷</span><span>⚽</span><span>🥅</span><span>⚽</span><span>🏆</span><span>🇧🇷</span><span>⚽</span><span>🥅</span>
+      </div>
 
       {/* SECTION 5 — PROVA SOCIAL */}
       <section className="social" id="depoimentos" aria-labelledby="social-title">
@@ -236,45 +251,42 @@ export default function Home() {
             <div className="testimonial-card">
               <div className="testimonial-card__stars stars" aria-label="5 estrelas">★★★★★</div>
               <p className="testimonial-card__text">
-                Finalmente um material que conecta o que os alunos amam com o que eu
-                preciso ensinar. Usei na época da Copa e eles pediram para continuar depois.
+                Minha aluna da sala de recursos tem hiperfoco em bandeiras. Será sensacional
+                utilizar com ela.
               </p>
-              <div className="testimonial-card__author">Ana Paula R.</div>
-              <div className="testimonial-card__role">Professora do 3º ano · São Paulo/SP</div>
+              <div className="testimonial-card__author">Aline Teixeira</div>
+              <div className="testimonial-card__role">Professora</div>
             </div>
 
             <div className="testimonial-card">
               <div className="testimonial-card__stars stars" aria-label="5 estrelas">★★★★★</div>
               <p className="testimonial-card__text">
-                Trabalho com atendimento individual e os recursos foram perfeitos. Minha
-                aluna com dislexia se engajou de um jeito que raramente vejo.
+                Que incrível, meninas! Vou tentar acessar a plataforma esses dias para ver as
+                aulas e pegar os materiais, mas já estou amando tudo só de ver aqui rapidinho 😍😍🤎
               </p>
-              <div className="testimonial-card__author">Fernanda M.</div>
-              <div className="testimonial-card__role">Psicopedagoga · Curitiba/PR</div>
+              <div className="testimonial-card__author">Júlie Barros</div>
+              <div className="testimonial-card__role">Professora</div>
             </div>
 
             <div className="testimonial-card">
               <div className="testimonial-card__stars stars" aria-label="5 estrelas">★★★★★</div>
               <p className="testimonial-card__text">
-                Material bem diagramado, organizado e que funciona de verdade. Já comprei
-                outros kits pedagógicos — esse é o mais completo.
+                Os materiais transformaram minha prática: otimizaram meu tempo e tornaram os
+                atendimentos mais dinâmicos, intencionais e eficazes.
               </p>
-              <div className="testimonial-card__author">Camila T.</div>
-              <div className="testimonial-card__role">
-                Professora particular · Belo Horizonte/MG
-              </div>
+              <div className="testimonial-card__author">Renata Castro</div>
+              <div className="testimonial-card__role">Psicopedagoga</div>
             </div>
 
             <div className="testimonial-card">
               <div className="testimonial-card__stars stars" aria-label="5 estrelas">★★★★★</div>
               <p className="testimonial-card__text">
-                Minha turma do 2º ano pede todo dia para jogar. O engajamento foi imediato
-                — e o conteúdo estava lá do início ao fim.
+                Usei o mesmo recurso com diferentes alunos e para trabalhar diversos objetivos.
+                Por ser adaptável, interativo e envolver movimento, conquistou as crianças e
+                tornou as aulas muito mais leves e envolventes. 💚💛💚💛
               </p>
-              <div className="testimonial-card__author">Renata S.</div>
-              <div className="testimonial-card__role">
-                Professora da rede municipal · Fortaleza/CE
-              </div>
+              <div className="testimonial-card__author">Luiza</div>
+              <div className="testimonial-card__role">Professora</div>
             </div>
           </div>
 
@@ -285,6 +297,11 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* DIVISOR FLUTUANTE */}
+      <div className="section-divider" aria-hidden="true">
+        <span>🥅</span><span>⚽</span><span>🏆</span><span>🇧🇷</span><span>⚽</span><span>🥅</span><span>⚽</span><span>🏆</span><span>🇧🇷</span><span>⚽</span>
+      </div>
 
       {/* SECTION 6 — COMO FUNCIONA */}
       <section className="how" id="como-funciona" aria-labelledby="how-title">
@@ -353,6 +370,11 @@ export default function Home() {
         </div>
       </section>
 
+      {/* DIVISOR FLUTUANTE */}
+      <div className="section-divider" aria-hidden="true">
+        <span>⚽</span><span>🏆</span><span>🇧🇷</span><span>⚽</span><span>🥅</span><span>⚽</span><span>🏆</span><span>🇧🇷</span><span>⚽</span><span>🥅</span>
+      </div>
+
       {/* SECTION 7 — RESUMO + PREÇO */}
       <section className="preco" id="preco" aria-labelledby="preco-title">
         <div className="container">
@@ -376,11 +398,11 @@ export default function Home() {
 
             <div className="preco__card" aria-label="Informações de preço">
               <div className="preco__card-name">Kit Recursos da Copa</div>
-              <div className="preco__card-de">De R$ [PREÇO ORIGINAL]</div>
+              <div className="preco__card-de">De <s>R$ 97,90</s></div>
               <div className="preco__card-price">
-                <sup>R$</sup>[PREÇO]
+                <sup>R$</sup>27,90
               </div>
-              <div className="preco__card-installment">Ou [X]x de R$ [PARCELA] sem juros</div>
+              <div className="preco__card-installment">Ou 2x de R$ 14,69 sem juros</div>
 
               <a href="#" className="btn btn--primary preco__card-btn" aria-label="Quero o Kit Recursos da Copa">
                 QUERO O KIT AGORA →
@@ -401,6 +423,11 @@ export default function Home() {
         </div>
       </section>
 
+      {/* DIVISOR FLUTUANTE */}
+      <div className="section-divider" aria-hidden="true">
+        <span>🥅</span><span>⚽</span><span>🏆</span><span>🇧🇷</span><span>⚽</span><span>🥅</span><span>⚽</span><span>🏆</span><span>🇧🇷</span><span>⚽</span>
+      </div>
+
       {/* SECTION 8 — FAQ */}
       <section className="faq" id="faq" aria-labelledby="faq-title">
         <div className="container">
@@ -415,27 +442,44 @@ export default function Home() {
         </div>
       </section>
 
+      {/* DIVISOR FLUTUANTE */}
+      <div className="section-divider" aria-hidden="true">
+        <span>⚽</span><span>🏆</span><span>🇧🇷</span><span>⚽</span><span>🥅</span><span>⚽</span><span>🏆</span><span>🇧🇷</span><span>⚽</span><span>🥅</span>
+      </div>
+
       {/* SECTION 9 — QUEM CRIOU */}
       <section className="criadoras" id="criadoras" aria-labelledby="criadoras-title">
         <div className="container">
           <div className="criadoras__inner">
             <div className="criadoras__photo">
-              <div className="criadoras__photo-box" role="img" aria-label="Foto das criadoras">
-                👩‍🏫
-              </div>
+              <Image
+                src="/foto_autoras.jpeg"
+                alt="Professoras Fernanda e Luiza, criadoras do Kit Recursos da Copa"
+                width={420}
+                height={420}
+                style={{ width: "100%", height: "auto", borderRadius: "1rem", objectFit: "cover" }}
+              />
             </div>
 
             <div className="criadoras__text">
               <span className="eyebrow eyebrow--verde">Feito por quem está na sala de aula</span>
-              <h2 id="criadoras-title">Quem são as criadoras?</h2>
+              <h2 id="criadoras-title">Somos as Professoras Fernanda e Luiza</h2>
               <p>
-                Somos professoras com experiência nos Anos Iniciais. Criamos o Kit Recursos
-                da Copa porque conhecemos o desafio de engajar crianças no conteúdo — e
-                sabemos o quanto um bom material muda a aula.
+                Formadas em Pedagogia pela Universidade Federal de Santa Maria (UFSM) e no
+                Magistério (Curso Normal), atuamos na área da educação desde 2014 com
+                experiências na Educação Infantil, Anos Iniciais, Turmas Multisseriadas,
+                Contraturno Escolar e Orientação Educacional.
               </p>
               <p>
-                Cada recurso foi testado com alunos reais, em turmas reais, antes de chegar
-                até você.
+                Atualmente trabalhamos com Formação de Professores em escolas, somos
+                Professoras Particulares de 1º ao 5º ano e sócias no{" "}
+                <strong>Catavento Espaço Pedagógico</strong>, nossa empresa de aulas
+                particulares e acompanhamento escolar.
+              </p>
+              <p>
+                Produzimos e utilizamos jogos e recursos significativos em nossas aulas e
+                já impactamos a prática de inúmeras profissionais.{" "}
+                <strong>Agora chegou a sua vez!</strong>
               </p>
               <a href="#preco" className="btn btn--verde" style={{ marginTop: "1.25rem" }} aria-label="Quero transformar minhas aulas com o Kit">
                 QUERO TRANSFORMAR MINHAS AULAS →
@@ -475,8 +519,8 @@ export default function Home() {
       {/* STICKY CTA (mobile only) */}
       <div className="sticky-cta" role="complementary" aria-label="Compra rápida">
         <div className="sticky-cta__price">
-          <div className="de">De R$ [X]</div>
-          <div className="por">R$ [Y]</div>
+          <div className="de">De R$ 97,90</div>
+          <div className="por">R$ 27,90</div>
         </div>
         <a href="#preco" className="btn btn--primary" aria-label="Quero o Kit agora">
           QUERO O KIT →
