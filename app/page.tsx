@@ -452,34 +452,28 @@ export default function Home() {
         <div className="container">
           <div className="criadoras__inner">
             <div className="criadoras__photo">
-              <Image
-                src="/foto_autoras.jpeg"
-                alt="Professoras Fernanda e Luiza, criadoras do Kit Recursos da Copa"
-                width={420}
-                height={420}
-                style={{ width: "100%", height: "auto", borderRadius: "1rem", objectFit: "cover" }}
-              />
+              <div className="criadoras__photo-box">
+                <Image
+                  src="/foto_autoras.jpeg"
+                  alt="Professoras Fernanda e Luiza, criadoras do Kit Recursos da Copa"
+                  width={180}
+                  height={180}
+                  style={{ width: "100%", height: "100%", objectFit: "cover", borderRadius: "50%" }}
+                />
+              </div>
             </div>
 
             <div className="criadoras__text">
               <span className="eyebrow eyebrow--verde">Feito por quem está na sala de aula</span>
-              <h2 id="criadoras-title">Somos as Professoras Fernanda e Luiza</h2>
+              <h2 id="criadoras-title">Quem são as criadoras?</h2>
               <p>
-                Formadas em Pedagogia pela Universidade Federal de Santa Maria (UFSM) e no
-                Magistério (Curso Normal), atuamos na área da educação desde 2014 com
-                experiências na Educação Infantil, Anos Iniciais, Turmas Multisseriadas,
-                Contraturno Escolar e Orientação Educacional.
+                Somos Fernanda e Luiza, professoras com experiência na Educação Infantil e nos
+                Anos Iniciais desde 2014. Criamos o Kit Recursos da Copa para transformar o
+                interesse das crianças pelo futebol em aprendizagem.
               </p>
               <p>
-                Atualmente trabalhamos com Formação de Professores em escolas, somos
-                Professoras Particulares de 1º ao 5º ano e sócias no{" "}
-                <strong>Catavento Espaço Pedagógico</strong>, nossa empresa de aulas
-                particulares e acompanhamento escolar.
-              </p>
-              <p>
-                Produzimos e utilizamos jogos e recursos significativos em nossas aulas e
-                já impactamos a prática de inúmeras profissionais.{" "}
-                <strong>Agora chegou a sua vez!</strong>
+                Cada recurso foi pensado a partir da nossa prática e testado com alunos reais
+                antes de chegar até você.
               </p>
               <a href="#preco" className="btn btn--verde" style={{ marginTop: "1.25rem" }} aria-label="Quero transformar minhas aulas com o Kit">
                 QUERO TRANSFORMAR MINHAS AULAS →
