@@ -345,26 +345,13 @@ export default function Home() {
             </div>
 
             <div className="how__video" aria-label="Vídeo de demonstração do kit">
-              <div className="how__video-bg" aria-hidden="true">
-                <svg
-                  width="100%"
-                  height="100%"
-                  xmlns="http://www.w3.org/2000/svg"
-                  aria-hidden="true"
-                  style={{ position: "absolute", inset: 0, opacity: 0.15 }}
-                >
-                  <defs>
-                    <pattern id="field" x="0" y="0" width="60" height="60" patternUnits="userSpaceOnUse">
-                      <path d="M60 0 L0 0 0 60" fill="none" stroke="#fff" strokeWidth="0.5" />
-                    </pattern>
-                  </defs>
-                  <rect width="100%" height="100%" fill="url(#field)" />
-                  <circle cx="50%" cy="50%" r="20%" fill="none" stroke="#fff" strokeWidth="1" />
-                  <line x1="50%" y1="0" x2="50%" y2="100%" stroke="#fff" strokeWidth="1" />
-                </svg>
-              </div>
-              <div className="how__video-play" aria-hidden="true">▶</div>
-              <div className="how__video-label">▶ Veja o kit funcionando em 3 minutos</div>
+              <iframe
+                className="how__video-iframe"
+                src="https://www.youtube.com/embed/9cTEqqbJeqk"
+                title="Kit Recursos da Copa — veja o kit funcionando"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
             </div>
           </div>
         </div>
@@ -384,7 +371,7 @@ export default function Home() {
           <div className="preco-includes__inner">
             <span className="eyebrow eyebrow--verde">O que vem no kit</span>
             <h2 className="section-title" id="preco-title">
-              Tudo que você precisa para dar uma aula incrível
+              Tudo o que você precisa para dar uma aula incrível
             </h2>
             <ul className="preco__list preco__list--dark" aria-label="Lista de itens incluídos">
               <li>4 recursos pedagógicos imprimíveis em PDF</li>

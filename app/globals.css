@@ -701,45 +701,18 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 
 .how__video {
-  background: var(--verde);
   border-radius: var(--radius);
   overflow: hidden;
-  aspect-ratio: 16/9;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   position: relative;
-  cursor: pointer;
+  aspect-ratio: 16/9;
   border: 3px solid rgba(255,255,255,0.2);
 }
-.how__video-play {
-  width: 4.5rem;
-  height: 4.5rem;
-  background: rgba(255,255,255,0.2);
-  border: 3px solid rgba(255,255,255,0.6);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.8rem;
-  z-index: 1;
-  transition: transform 0.15s, background 0.15s;
-}
-.how__video:hover .how__video-play { transform: scale(1.1); background: rgba(255,255,255,0.3); }
-.how__video-label {
-  position: absolute;
-  bottom: 1rem;
-  left: 0; right: 0;
-  text-align: center;
-  color: rgba(255,255,255,0.8);
-  font-size: 0.85rem;
-  font-weight: 600;
-}
-.how__video-bg {
+.how__video-iframe {
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, var(--verde) 0%, var(--verde-dark) 100%);
-  opacity: 0.9;
+  width: 100%;
+  height: 100%;
+  border: none;
 }
 
 /* ============================================================
