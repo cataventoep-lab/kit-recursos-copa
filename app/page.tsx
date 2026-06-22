@@ -396,7 +396,7 @@ export default function Home() {
             <div className="preco__card-installment">Ou 2x de R$ 14,69 sem juros</div>
             <p className="preco__urgency">⏳ Esse preço pode subir a qualquer momento.</p>
 
-            <a href="#" className="btn btn--primary preco__card-btn" aria-label="Quero o Kit Recursos da Copa">
+            <a href="https://pay.kiwify.com.br/TN5r9AV" target="_blank" rel="noopener noreferrer" className="btn btn--primary preco__card-btn" aria-label="Quero o Kit Recursos da Copa">
               🛒 QUERO O KIT AGORA →
             </a>
 
@@ -468,7 +468,7 @@ export default function Home() {
                 Cada recurso foi pensado a partir da nossa prática e testado com alunos reais
                 antes de chegar até você.
               </p>
-              <a href="#preco" className="btn btn--verde" style={{ marginTop: "1.25rem" }} aria-label="Quero transformar minhas aulas com o Kit">
+              <a href="https://pay.kiwify.com.br/TN5r9AV" target="_blank" rel="noopener noreferrer" className="btn btn--verde" style={{ marginTop: "1.25rem" }} aria-label="Quero transformar minhas aulas com o Kit">
                 QUERO TRANSFORMAR MINHAS AULAS →
               </a>
             </div>
@@ -482,7 +482,7 @@ export default function Home() {
           <h2 id="cta-final-title">Pronta para usar a Copa a favor da sua aula?</h2>
           <p>Compre agora, imprima hoje e utilize na próxima aula 😊</p>
 
-          <a href="#preco" className="btn btn--verde" style={{ fontSize: "1.1rem", padding: "1.1rem 2.5rem" }} aria-label="Quero o Kit Recursos da Copa agora">
+          <a href="https://pay.kiwify.com.br/TN5r9AV" target="_blank" rel="noopener noreferrer" className="btn btn--verde" style={{ fontSize: "1.1rem", padding: "1.1rem 2.5rem" }} aria-label="Quero o Kit Recursos da Copa agora">
             QUERO O KIT RECURSOS DA COPA →
           </a>
 
