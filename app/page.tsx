@@ -375,27 +375,33 @@ export default function Home() {
         <span>⚽</span><span>🏆</span><span>🇧🇷</span><span>⚽</span><span>🥅</span><span>⚽</span><span>🏆</span><span>🇧🇷</span><span>⚽</span><span>🥅</span>
       </div>
 
-      {/* SECTION 7 — RESUMO + PREÇO */}
-      <section className="preco" id="preco" aria-labelledby="preco-title">
+      {/* SECTION 7 — O QUE ESTÁ INCLUÍDO */}
+      <section className="preco-includes-solo" id="preco" aria-labelledby="preco-title">
         <div className="container">
-          <div className="preco__inner">
-            <div className="preco__includes">
-              <span className="eyebrow eyebrow--verde" style={{ marginBottom: "1rem" }}>
-                O que está incluído
-              </span>
-              <h2 className="section-title" id="preco-title" style={{ marginBottom: "1.25rem" }}>
-                Tudo que você precisa para dar uma aula incrível
-              </h2>
-              <ul className="preco__list" aria-label="Lista de itens incluídos">
-                <li>4 recursos pedagógicos imprimíveis em PDF</li>
-                <li>Aulas explicativas em vídeo para cada recurso</li>
-                <li>Manual de formas de uso (sala, clínica, reforço)</li>
-                <li>Habilidades da BNCC mapeadas</li>
-                <li>Versões diferenciadas por nível</li>
-                <li>Acesso vitalício ao material digital</li>
-              </ul>
-            </div>
+          <div className="preco-includes-solo__inner">
+            <span className="eyebrow eyebrow--verde">O que está incluído</span>
+            <h2 className="section-title" id="preco-title">
+              Tudo que você precisa para dar uma aula incrível
+            </h2>
+            <ul className="preco__list preco__list--cols" aria-label="Lista de itens incluídos">
+              <li>4 recursos pedagógicos imprimíveis em PDF</li>
+              <li>Aulas explicativas em vídeo para cada recurso</li>
+              <li>Manual de formas de uso (sala, clínica, reforço)</li>
+              <li>Habilidades da BNCC mapeadas</li>
+              <li>Versões diferenciadas por nível</li>
+              <li>Acesso vitalício ao material digital</li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
+      {/* SECTION 7b — OFERTA / PREÇO */}
+      <section className="preco" aria-label="Oferta do Kit Recursos da Copa">
+        <div className="container">
+          <div className="preco__inner" style={{ maxWidth: 520, margin: "0 auto" }}>
+            <div style={{ display: "none" }}>
+
+            </div>
             <div className="preco__card" aria-label="Informações de preço">
               <div className="preco__discount-badge">🔥 71% OFF — Oferta limitada</div>
               <div className="preco__card-name">Kit Recursos da Copa</div>
@@ -407,7 +413,7 @@ export default function Home() {
               <p className="preco__urgency">⏳ Esse preço pode subir a qualquer momento.</p>
 
               <a href="#" className="btn btn--primary preco__card-btn" aria-label="Quero o Kit Recursos da Copa">
-                QUERO O KIT AGORA →
+                🛒 QUERO O KIT AGORA →
               </a>
 
               <div className="preco__card-guarantee">

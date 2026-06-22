@@ -743,7 +743,34 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 
 /* ============================================================
-   SECTION 7 — PREÇO
+   SECTION 7 — O QUE ESTÁ INCLUÍDO (separado)
+============================================================ */
+.preco-includes-solo {
+  background: var(--branco);
+  padding: clamp(2.5rem, 6vw, 4rem) var(--px);
+}
+.preco-includes-solo__inner {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+.preco-includes-solo__inner .section-title {
+  margin-bottom: 1.5rem;
+}
+.preco__list--cols {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.7rem;
+  text-align: left;
+  max-width: 600px;
+  margin: 0 auto;
+}
+@media (min-width: 640px) {
+  .preco__list--cols { grid-template-columns: 1fr 1fr; }
+}
+
+/* ============================================================
+   SECTION 7b — PREÇO / OFERTA
 ============================================================ */
 .preco {
   background: linear-gradient(160deg, #0d5c30 0%, #1a6b3a 60%, #0d5c30 100%);
@@ -764,10 +791,8 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .preco__inner {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 2rem;
+  gap: 2.5rem;
   align-items: start;
-  max-width: 560px;
-  margin: 0 auto;
 }
 .preco__includes {
   color: rgba(255,255,255,0.9);
@@ -848,7 +873,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 .preco__card-price {
   font-family: var(--font-display);
-  font-size: clamp(3.8rem, 12vw, 5.2rem);
+  font-size: clamp(3.4rem, 8vw, 4.4rem);
   font-weight: 700;
   color: var(--amarelo);
   line-height: 1;
@@ -879,8 +904,11 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .preco__card-btn {
   width: 100%;
   margin-bottom: 1rem;
-  font-size: 1.1rem;
-  padding: 1.1rem 1.5rem;
+  font-size: 1.15rem;
+  padding: 1.2rem 1.5rem;
+  outline: 3px solid rgba(255,255,255,0.35);
+  outline-offset: 3px;
+  letter-spacing: 0.04em;
 }
 .preco__card-guarantee {
   display: flex;
