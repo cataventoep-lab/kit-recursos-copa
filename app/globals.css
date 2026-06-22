@@ -770,6 +770,18 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   position: relative;
   overflow: hidden;
 }
+.preco-oferta__inner {
+  background: rgba(255,255,255,0.07);
+  border: 1.5px solid rgba(255,255,255,0.18);
+  border-radius: 24px;
+  padding: 2.5rem 2rem;
+  max-width: 520px;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+}
 .preco-oferta::after {
   content: '⚽';
   position: absolute;
@@ -779,14 +791,6 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   bottom: -5rem;
   line-height: 1;
   pointer-events: none;
-}
-.preco-oferta__inner {
-  max-width: 560px;
-  margin: 0 auto;
-  text-align: center;
-  color: #fff;
-  position: relative;
-  z-index: 1;
 }
 
 /* Desktop: wrapper com grid 2 colunas unindo as duas seções */
@@ -809,9 +813,10 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   .preco-oferta {
     display: flex;
     align-items: center;
+    justify-content: center;
     padding: clamp(3rem, 8vw, 5rem) max(var(--px), calc((100vw - var(--max-w)) / 2 + var(--px))) clamp(3rem, 8vw, 5rem) var(--px);
   }
-  .preco-oferta__inner { max-width: none; width: 100%; }
+  .preco-oferta__inner { max-width: 440px; width: 100%; margin: 0 auto; }
 }
 
 /* Lista de itens incluídos — variante escura (para fundo branco) */
