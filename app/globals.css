@@ -794,6 +794,11 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   gap: 2.5rem;
   align-items: start;
 }
+.preco__card-wrap {
+  max-width: 480px;
+  margin: 0 auto;
+  width: 100%;
+}
 .preco__includes {
   color: rgba(255,255,255,0.9);
 }
@@ -818,16 +823,19 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   gap: 0.65rem;
   font-size: 0.95rem;
   line-height: 1.5;
-  color: rgba(255,255,255,0.9);
+  color: var(--texto);
 }
 .preco__list li::before {
   content: '✔';
-  color: var(--amarelo);
+  color: var(--verde);
   font-weight: 900;
   font-size: 1rem;
   flex-shrink: 0;
   margin-top: 0.05rem;
 }
+/* Na seção de oferta (fundo escuro) o texto fica branco */
+.preco .preco__list li { color: rgba(255,255,255,0.9); }
+.preco .preco__list li::before { color: var(--amarelo); }
 
 .preco__card {
   background: rgba(255,255,255,0.08);
@@ -904,11 +912,12 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .preco__card-btn {
   width: 100%;
   margin-bottom: 1rem;
-  font-size: 1.15rem;
-  padding: 1.2rem 1.5rem;
+  font-size: 1.05rem;
+  padding: 1.1rem 1rem;
   outline: 3px solid rgba(255,255,255,0.35);
   outline-offset: 3px;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
 }
 .preco__card-guarantee {
   display: flex;

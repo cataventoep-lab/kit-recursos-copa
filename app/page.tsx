@@ -398,10 +398,7 @@ export default function Home() {
       {/* SECTION 7b — OFERTA / PREÇO */}
       <section className="preco" aria-label="Oferta do Kit Recursos da Copa">
         <div className="container">
-          <div className="preco__inner" style={{ maxWidth: 520, margin: "0 auto" }}>
-            <div style={{ display: "none" }}>
-
-            </div>
+          <div className="preco__card-wrap">
             <div className="preco__card" aria-label="Informações de preço">
               <div className="preco__discount-badge">🔥 71% OFF — Oferta limitada</div>
               <div className="preco__card-name">Kit Recursos da Copa</div>
@@ -437,6 +434,7 @@ export default function Home() {
       </div>
 
       {/* SECTION 8 — FAQ */}
+
       <section className="faq" id="faq" aria-labelledby="faq-title">
         <div className="container">
           <div className="faq__header">
