@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Faq from "./components/Faq";
 
 export default function Home() {
@@ -43,30 +44,14 @@ export default function Home() {
             </div>
 
             <div className="hero__mockup">
-              <div className="sticker-float" aria-hidden="true">⚽</div>
-              <div className="sticker-float" aria-hidden="true">🏆</div>
-              <div className="sticker-float" aria-hidden="true">📣</div>
-
-              <div className="hero__mockup-card">
-                <div className="hero__mockup-title">Kit Recursos da Copa</div>
-
-                <div className="hero__mockup-item">
-                  <span className="num">1</span>
-                  É GOOL! — Recurso Versátil
-                </div>
-                <div className="hero__mockup-item">
-                  <span className="num">2</span>
-                  AQUI É O BRASIL — Cards
-                </div>
-                <div className="hero__mockup-item">
-                  <span className="num">3</span>
-                  MATEMÁTICA DA COPA
-                </div>
-                <div className="hero__mockup-item">
-                  <span className="num">4</span>
-                  CAMPEÃO! — Jogo Versátil
-                </div>
-              </div>
+              <Image
+                src="/kit-hero.png"
+                alt="Kit Recursos da Copa — material imprimível temático de futebol"
+                width={480}
+                height={420}
+                priority
+                style={{ borderRadius: 16, boxShadow: "0 8px 32px rgba(0,0,0,0.22)", width: "100%", height: "auto" }}
+              />
             </div>
           </div>
         </div>
