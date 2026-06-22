@@ -750,7 +750,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 ============================================================ */
 .preco-includes {
   background: #fff;
-  padding: clamp(3rem, 8vw, 5rem) var(--px);
+  padding: clamp(4rem, 10vw, 6rem) var(--px);
 }
 .preco-includes__inner {
   max-width: var(--max-w);
@@ -766,7 +766,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   background-image:
     repeating-linear-gradient(90deg, rgba(255,255,255,0.06) 0px, rgba(255,255,255,0.06) 1px, transparent 1px, transparent 60px),
     repeating-linear-gradient(0deg,  rgba(255,255,255,0.06) 0px, rgba(255,255,255,0.06) 1px, transparent 1px, transparent 60px);
-  padding: clamp(3rem, 8vw, 5rem) var(--px);
+  padding: clamp(4rem, 10vw, 6rem) var(--px);
   position: relative;
   overflow: hidden;
 }
@@ -802,13 +802,14 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   .preco-includes {
     display: flex;
     align-items: center;
-    padding: clamp(3rem, 8vw, 5rem) var(--px);
+    /* alinha conteúdo com o container das outras seções */
+    padding: clamp(3rem, 8vw, 5rem) var(--px) clamp(3rem, 8vw, 5rem) max(var(--px), calc((100vw - var(--max-w)) / 2 + var(--px)));
   }
   .preco-includes__inner { max-width: none; }
   .preco-oferta {
     display: flex;
     align-items: center;
-    padding: clamp(3rem, 8vw, 5rem) var(--px);
+    padding: clamp(3rem, 8vw, 5rem) max(var(--px), calc((100vw - var(--max-w)) / 2 + var(--px))) clamp(3rem, 8vw, 5rem) var(--px);
   }
   .preco-oferta__inner { max-width: none; width: 100%; }
 }
