@@ -23,9 +23,9 @@ export default function Home() {
               </h1>
 
               <p className="hero__sub">
-                Um kit com 4 recursos envolvendo a temática da Copa para desenvolver habilidades,
-                cumprir desafios e revisar conteúdos de português, matemática ou qualquer outra
-                disciplina com seus estudantes de 1º ao 5º ano.
+                Um kit com 4 recursos da Copa para desenvolver habilidades, cumprir desafios e
+                revisar conteúdos de português, matemática ou qualquer outra disciplina com seus
+                estudantes.
               </p>
 
               <div className="hero__cta-wrap">
@@ -285,7 +285,7 @@ export default function Home() {
                 Por ser adaptável, interativo e envolver movimento, conquistou as crianças e
                 tornou as aulas muito mais leves e envolventes. 💚💛💚💛
               </p>
-              <div className="testimonial-card__author">Luiza</div>
+              <div className="testimonial-card__author">Luiza Puntel</div>
               <div className="testimonial-card__role">Professora</div>
             </div>
           </div>

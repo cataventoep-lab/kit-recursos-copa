@@ -195,6 +195,9 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   position: relative;
   z-index: 1;
 }
+/* Mobile: imagem aparece primeiro */
+.hero__mockup { order: -1; }
+.hero__text   { order:  0; }
 
 .hero__badge {
   display: inline-flex;
@@ -215,7 +218,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 
 .hero__title {
   font-family: var(--font-display);
-  font-size: clamp(1.7rem, 5.5vw, 2.8rem);
+  font-size: clamp(2.4rem, 8vw, 2.8rem);
   line-height: 1.1;
   color: #fff;
 }
@@ -1061,6 +1064,8 @@ footer a:hover { color: var(--amarelo); }
 }
 
 @media (min-width: 900px) {
+  .hero__title { font-size: clamp(1.7rem, 3.5vw, 2.8rem); }
+  .hero__mockup { order: unset; }
   .hero__inner {
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
