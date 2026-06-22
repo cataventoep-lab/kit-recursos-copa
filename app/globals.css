@@ -748,20 +748,20 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .preco {
   background:
     repeating-linear-gradient(
-      90deg,
-      rgba(255,255,255,0.025) 0px,
-      rgba(255,255,255,0.025) 60px,
-      transparent 60px,
-      transparent 120px
+      -55deg,
+      rgba(255,255,255,0.04) 0px,
+      rgba(255,255,255,0.04) 18px,
+      transparent 18px,
+      transparent 36px
     ),
     repeating-linear-gradient(
-      0deg,
-      rgba(255,255,255,0.025) 0px,
-      rgba(255,255,255,0.025) 60px,
-      transparent 60px,
-      transparent 120px
+      35deg,
+      rgba(0,0,0,0.06) 0px,
+      rgba(0,0,0,0.06) 18px,
+      transparent 18px,
+      transparent 36px
     ),
-    linear-gradient(160deg, #0d5c30 0%, #1a6b3a 60%, #0d5c30 100%);
+    linear-gradient(160deg, #0a4a26 0%, #1a6b3a 55%, #0d5c30 100%);
   padding: clamp(3rem, 8vw, 5rem) var(--px);
   position: relative;
   overflow: hidden;
@@ -793,16 +793,19 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   color: #fff !important;
   margin-bottom: 1.5rem;
 }
-.preco__includes .eyebrow { color: var(--amarelo); border-color: var(--amarelo); }
 
-/* No mobile: a coluna de itens ganha um destaque visual */
+/* No mobile: card branco/claro para separar visualmente do card de preço */
 @media (max-width: 899px) {
   .preco__includes {
-    background: rgba(255,255,255,0.07);
-    border: 1px solid rgba(255,255,255,0.15);
-    border-radius: 16px;
-    padding: 1.5rem;
+    background: #fff;
+    border-radius: 20px;
+    padding: 2rem 1.5rem;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.18);
   }
+  .preco__includes-title { color: var(--verde-dark) !important; }
+  .preco__includes .eyebrow { background: var(--amarelo); color: var(--verde-dark); }
+  .preco__list li { color: var(--verde-dark) !important; }
+  .preco__list li::before { color: var(--verde); }
 }
 
 .preco__list {
@@ -904,6 +907,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   outline: 3px solid rgba(255,255,255,0.35);
   outline-offset: 3px;
   white-space: nowrap;
+  animation: btn-shine 2.8s linear infinite, btn-pulse 2s ease-in-out infinite !important;
 }
 .preco__card-guarantee {
   display: flex;
