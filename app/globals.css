@@ -196,7 +196,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   z-index: 1;
 }
 /* Mobile: imagem aparece primeiro */
-.hero__mockup { order: -1; margin: -1rem -1rem 0; }
+.hero__mockup { order: -1; margin: -2rem -2rem 0; }
 .hero__text   { order:  0; }
 
 .hero__badge {

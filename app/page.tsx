@@ -510,16 +510,6 @@ export default function Home() {
         </p>
       </footer>
 
-      {/* STICKY CTA (mobile only) */}
-      <div className="sticky-cta" role="complementary" aria-label="Compra rápida">
-        <div className="sticky-cta__price">
-          <div className="de">De R$ 97,90</div>
-          <div className="por">R$ 27,90</div>
-        </div>
-        <a href="#preco" className="btn btn--primary" aria-label="Quero o Kit agora">
-          QUERO O KIT →
-        </a>
-      </div>
     </>
   );
 }
