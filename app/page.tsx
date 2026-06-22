@@ -464,7 +464,7 @@ export default function Home() {
             </div>
 
             <div className="criadoras__text">
-              <span className="eyebrow eyebrow--verde">Feito por quem está na sala de aula</span>
+              <span className="eyebrow eyebrow--verde">Feito por quem vive a educação todos os dias.</span>
               <h2 id="criadoras-title">Quem são as criadoras?</h2>
               <p>
                 Somos Fernanda e Luiza, professoras com experiência na Educação Infantil e nos
