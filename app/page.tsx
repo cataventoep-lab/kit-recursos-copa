@@ -376,56 +376,57 @@ export default function Home() {
       </div>
 
       {/* SECTION 7 — O QUE ESTÁ INCLUÍDO + OFERTA */}
-      <section className="preco" id="preco" aria-labelledby="preco-title">
-        <div className="container">
-          <div className="preco__inner">
+      {/* wrapper une as duas seções no desktop (grid 2 colunas) */}
+      <div className="preco-wrapper" id="preco">
 
-            {/* Coluna esquerda — o que está incluído */}
-            <div className="preco__includes">
-              <span className="eyebrow eyebrow--amarelo">O que está incluído</span>
-              <h2 className="section-title preco__includes-title" id="preco-title">
-                Tudo que você precisa para dar uma aula incrível
-              </h2>
-              <ul className="preco__list" aria-label="Lista de itens incluídos">
-                <li>4 recursos pedagógicos imprimíveis em PDF</li>
-                <li>Aulas explicativas em vídeo para cada recurso</li>
-                <li>Manual de formas de uso (sala, clínica, reforço)</li>
-                <li>Habilidades da BNCC mapeadas</li>
-                <li>Versões diferenciadas por nível</li>
-                <li>Acesso vitalício ao material digital</li>
-              </ul>
-            </div>
-
-            {/* Coluna direita — card de oferta */}
-            <div className="preco__card" aria-label="Informações de preço">
-              <div className="preco__discount-badge">🔥 71% OFF — Oferta limitada</div>
-              <div className="preco__card-name">Kit Recursos da Copa</div>
-              <div className="preco__card-de">De R$ 97,90</div>
-              <div className="preco__card-price">
-                <sup>R$</sup>27,90
-              </div>
-              <div className="preco__card-installment">Ou 2x de R$ 14,69 sem juros</div>
-              <p className="preco__urgency">⏳ Esse preço pode subir a qualquer momento.</p>
-
-              <a href="#" className="btn btn--primary preco__card-btn" aria-label="Quero o Kit Recursos da Copa">
-                🛒 QUERO O KIT AGORA →
-              </a>
-
-              <div className="preco__card-guarantee">
-                <span aria-hidden="true">🔒</span>
-                <span><strong>Garantia de 7 dias</strong> — devolvemos 100% do seu dinheiro, sem perguntas.</span>
-              </div>
-
-              <div className="preco__seals" aria-label="Selos de confiança">
-                <span className="preco__seal"><span aria-hidden="true">🔒</span> Compra segura</span>
-                <span className="preco__seal"><span aria-hidden="true">✅</span> Acesso imediato</span>
-                <span className="preco__seal"><span aria-hidden="true">📄</span> PDF imprimível</span>
-              </div>
-            </div>
-
+        {/* SEÇÃO A — O que está incluído (branca) */}
+        <section className="preco-includes" aria-labelledby="preco-title">
+          <div className="preco-includes__inner">
+            <span className="eyebrow eyebrow--verde">O que está incluído</span>
+            <h2 className="section-title" id="preco-title">
+              Tudo que você precisa para dar uma aula incrível
+            </h2>
+            <ul className="preco__list preco__list--dark" aria-label="Lista de itens incluídos">
+              <li>4 recursos pedagógicos imprimíveis em PDF</li>
+              <li>Aulas explicativas em vídeo para cada recurso</li>
+              <li>Manual de formas de uso (sala, clínica, reforço)</li>
+              <li>Habilidades da BNCC mapeadas</li>
+              <li>Versões diferenciadas por nível</li>
+              <li>Acesso vitalício ao material digital</li>
+            </ul>
           </div>
-        </div>
-      </section>
+        </section>
+
+        {/* SEÇÃO B — Oferta (verde com textura) */}
+        <section className="preco-oferta" aria-labelledby="preco-oferta-title">
+          <div className="preco-oferta__inner">
+            <div className="preco__discount-badge">🔥 71% OFF — Oferta limitada</div>
+            <div className="preco__card-name" id="preco-oferta-title">Kit Recursos da Copa</div>
+            <div className="preco__card-de">De R$ 97,90</div>
+            <div className="preco__card-price">
+              <sup>R$</sup>27,90
+            </div>
+            <div className="preco__card-installment">Ou 2x de R$ 14,69 sem juros</div>
+            <p className="preco__urgency">⏳ Esse preço pode subir a qualquer momento.</p>
+
+            <a href="#" className="btn btn--primary preco__card-btn" aria-label="Quero o Kit Recursos da Copa">
+              🛒 QUERO O KIT AGORA →
+            </a>
+
+            <div className="preco__card-guarantee">
+              <span aria-hidden="true">🔒</span>
+              <span><strong>Garantia de 7 dias</strong> — devolvemos 100% do seu dinheiro, sem perguntas.</span>
+            </div>
+
+            <div className="preco__seals" aria-label="Selos de confiança">
+              <span className="preco__seal"><span aria-hidden="true">🔒</span> Compra segura</span>
+              <span className="preco__seal"><span aria-hidden="true">✅</span> Acesso imediato</span>
+              <span className="preco__seal"><span aria-hidden="true">📄</span> PDF imprimível</span>
+            </div>
+          </div>
+        </section>
+
+      </div>
 
       {/* DIVISOR FLUTUANTE */}
       <div className="section-divider" aria-hidden="true">
