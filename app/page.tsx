@@ -46,11 +46,12 @@ export default function Home() {
 
             <div className="hero__mockup">
               <Image
-                src="/kit-hero.png"
+                src="/kit-recursos-copa/kit-hero.png"
                 alt="Kit Recursos da Copa — material imprimível temático de futebol"
                 width={480}
                 height={420}
                 priority
+                unoptimized
                 style={{ width: "100%", height: "auto" }}
               />
             </div>
@@ -367,7 +368,7 @@ export default function Home() {
       <div className="preco-wrapper">
 
         {/* SEÇÃO A — O que vem no kit (branca) */}
-        <section className="preco-includes" id="oferta" aria-labelledby="preco-title">
+        <section className="preco-includes" aria-labelledby="preco-title">
           <div className="preco-includes__inner">
             <span className="eyebrow eyebrow--verde">O que vem no kit</span>
             <h2 className="section-title" id="preco-title">
@@ -385,7 +386,7 @@ export default function Home() {
         </section>
 
         {/* SEÇÃO B — Oferta (verde com textura) */}
-        <section className="preco-oferta" aria-labelledby="preco-oferta-title">
+        <section className="preco-oferta" id="oferta" aria-labelledby="preco-oferta-title">
           <div className="preco-oferta__inner">
             <div className="preco__discount-badge">🔥 71% OFF — Oferta limitada</div>
             <div className="preco__card-name" id="preco-oferta-title">Kit Recursos da Copa</div>
@@ -447,10 +448,11 @@ export default function Home() {
             <div className="criadoras__photo">
               <div className="criadoras__photo-box">
                 <Image
-                  src="/foto_autoras.jpeg"
+                  src="/kit-recursos-copa/foto_autoras.jpeg"
                   alt="Professoras Fernanda e Luiza, criadoras do Kit Recursos da Copa"
                   width={400}
                   height={400}
+                  unoptimized
                   style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top center", borderRadius: "50%" }}
                 />
               </div>
