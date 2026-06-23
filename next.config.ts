@@ -1,13 +1,13 @@
 import type { NextConfig } from "next";
 
-const isGithubPages = process.env.GITHUB_PAGES === "true";
-
 const nextConfig: NextConfig = {
-  ...(isGithubPages && {
-    output: "export",
-    basePath: "/kit-recursos-copa",
-    images: { unoptimized: true },
-  }),
+  output: "export",
+  basePath: "/kit-recursos-copa",
+  trailingSlash: true,
+
+  images: {
+    unoptimized: true,
+  },
 };
 
 export default nextConfig;
