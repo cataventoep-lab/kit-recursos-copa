@@ -30,7 +30,7 @@ export default function Home() {
 
               <div className="hero__cta-wrap">
                 <a
-                  href="#preco"
+                  href="#oferta"
                   className="btn btn--primary"
                   aria-label="Comprar Kit Recursos da Copa agora"
                 >
@@ -291,7 +291,7 @@ export default function Home() {
           </div>
 
           <div className="social__cta">
-            <a href="#preco" className="btn btn--primary" aria-label="Quero o Kit Recursos da Copa">
+            <a href="#oferta" className="btn btn--primary" aria-label="Quero o Kit Recursos da Copa">
               QUERO O KIT AGORA →
             </a>
           </div>
@@ -364,7 +364,7 @@ export default function Home() {
 
       {/* SECTION 7 — O QUE ESTÁ INCLUÍDO + OFERTA */}
       {/* wrapper une as duas seções no desktop (grid 2 colunas) */}
-      <div className="preco-wrapper" id="preco">
+      <div className="preco-wrapper" id="oferta">
 
         {/* SEÇÃO A — O que está incluído (branca) */}
         <section className="preco-includes" aria-labelledby="preco-title">
