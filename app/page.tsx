@@ -364,10 +364,10 @@ export default function Home() {
 
       {/* SECTION 7 — O QUE ESTÁ INCLUÍDO + OFERTA */}
       {/* wrapper une as duas seções no desktop (grid 2 colunas) */}
-      <div className="preco-wrapper" id="oferta">
+      <div className="preco-wrapper">
 
-        {/* SEÇÃO A — O que está incluído (branca) */}
-        <section className="preco-includes" aria-labelledby="preco-title">
+        {/* SEÇÃO A — O que vem no kit (branca) */}
+        <section className="preco-includes" id="oferta" aria-labelledby="preco-title">
           <div className="preco-includes__inner">
             <span className="eyebrow eyebrow--verde">O que vem no kit</span>
             <h2 className="section-title" id="preco-title">
